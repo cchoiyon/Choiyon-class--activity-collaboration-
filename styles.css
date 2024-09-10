@@ -1,0 +1,74 @@
+/* Basic styling */
+
+/* Changed the header, body margin and body*/
+header, body{
+  margin:0; 
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#product-list {
+  padding: 20px;
+}
+
+
+/* Combining each of the classes toghether to create cleaner code */
+.productr1, .productr2, .productr3{
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+
+
+/* Pseudo-classes for link behavior and order with errors */
+.product a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+/* Changed each link id*/
+a:visited{
+  color: rgb(230, 0, 255);
+}
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/* Clear floats to avoid parent collapse */
+#product-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Please use google to find out what this block of code is and why it is being used in this code */
